@@ -2,6 +2,7 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 const axios = require('axios')
 const FormData = require('form-data');
+var fs = require('fs');
 
 try {
   const appPath = core.getInput('app-path');

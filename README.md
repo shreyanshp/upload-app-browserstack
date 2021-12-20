@@ -28,10 +28,12 @@ The url for the app uploaded.
 
 ## Example usage
 
-uses: actions/upload-app-browserstack@v1
-with:
-  app-path: Apps/shreyansh.apk
-  browserstack-username: ${{ secrets.BROWSERSTACK_USERNAME }}
-  browserstack-accesskey: ${{ secrets.BROWSERSTACK_ACCESSKEY }}
-
+```
+- name: Upload APK to BrowserStack
+  uses: shreyanshp/upload-app-browserstack@v3
+  with:
+    app-path: /path-to-apk/app.apk
+    browserstack-username: ${{ secrets.BROWSERSTACK_USERNAME }}
+    browserstack-accesskey: ${{ secrets.BROWSERSTACK_ACCESSKEY }}
+```
 
